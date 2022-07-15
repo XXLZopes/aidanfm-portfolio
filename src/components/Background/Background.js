@@ -28,6 +28,23 @@ export default function Background ({navState, setNavState}) {
         }
     })
 
+    //Correct resize on scroll
+    useEffect(() => {
+        function handleResizeOnScroll() {
+            setDimensions (
+                {
+                    height: window.innerHeight,
+                    width: window.innerWidth
+                }
+            )
+        }
+        window.addEventListener('scroll', handleResizeOnScroll)
+        return _ => {
+            window.removeEventListener('scroll', handleResizeOnScroll)
+              
+        }
+    })
+
     class Circle {
         constructor(x, y, r, color, text) {
             this.x = dimensions.width / x || 0;
