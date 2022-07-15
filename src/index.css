@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  height: 100vh;
+  background: linear-gradient(160deg, #5E6EFF, #383838);
+}
+
+.none {
+  display: none;
+}
+
+.z-index-top {
+  
+}

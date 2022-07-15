@@ -1,0 +1,72 @@
+.circle-con {
+    width: 100vw;
+    height: 0vw;
+    position: fixed;
+    top: 0;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 365px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+}
+
+.circle h2 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.no-nav-h2 {
+    font-size: 0px;
+    opacity: 0;
+    transition: 0s;
+    transition-delay: 0s;
+}
+.show-nav-h2 {
+    font-size: 4.5vw;
+    opacity: 1;
+    transition: .6s;
+}
+
+
+.transition {
+    box-shadow: 0 15px 50px rgb(0, 0, 0);
+    transition: .6s;
+    transition-delay: .1s;
+}
+
+.transition:hover {
+    padding: 15px;
+    cursor: pointer;
+    transition: .2s;
+    transition-delay: 0;
+    box-shadow: 0 0px 50px rgb(251, 255, 147);
+    z-index: 10;
+}
+
+.transition:hover > h2{
+    font-size: 5vw;
+    transition: .2s;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .show-nav-h2 {
+       font-size: 30px;
+       transition-delay: .1s;
+    }
+
+    .circle-con {
+        margin-left: -10vw;
+    }
+    .transition:hover > h2{
+        font-size: 39px;
+    }
+
+    .no-nav-h2 {
+        transition: 0s;
+        transition-delay: 0s;
+    }
+  }
