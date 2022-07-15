@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/aidanfm-portfolio/precache-manifest.5de5dcaac9275e55d7bb094fdc89a06c.js"
+  "/aidanfm-portfolio/precache-manifest.5157391dacf8e1b7e6764ec57157b6f4.js"
 );
 
 workbox.clientsClaim();
