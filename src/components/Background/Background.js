@@ -100,28 +100,19 @@ export default function Background ({navState, setNavState}) {
     let circle2 = new Circle('0vw', '35vh', '35vw', '#FF8B8B', 'Past Projects')
     let circle3 = new Circle('37vw', '65vh', '19vw', '#7451FF', 'Contact')
     let circle4 = new Circle('76vw', '85vh', '9vw', '#B6FF9C')
-    let circle5 = new Circle('0vw', '90.3vh', '17vw', '#B3B3B3')
+    let circle5 = new Circle('1vw', '90vh', '17vw', '#B3B3B3')
 
     function setOpenNavCircleCoords() {
         circle0.move('15vw', '8vh')
         circle1.move('50vw', '25vh')
         circle2.move('15vw', '40vh')
         circle3.move('45vw', '70vh')
-        // circle4.move(1.25, 1.3)
 
         circle0.setRadius('19vw')
         circle1.setRadius('23vw')
         circle2.setRadius('35vw')
         circle3.setRadius('19vw')
     }
-
-    // function setCloseNavCircleCoords() {
-        // circle0.move('81vw', '4vh')
-        // circle1.move('59vw', '30vh')
-        // circle2.move('0vw', '35vh')
-        // circle3.move('37vw', '65vh')
-        // circle4.move('76vw', '85vh')
-    // }
 
     if (navState) {
         setOpenNavCircleCoords()
