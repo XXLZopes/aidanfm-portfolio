@@ -95,6 +95,7 @@ export default function Background ({navState, setNavState}) {
     const circlesOther = [circle4, circle5]
 
     return (
+        <div>
 
         <div className = {`circle-con ${navState ? 'content-open' : ''}`}>
 
@@ -124,7 +125,11 @@ export default function Background ({navState, setNavState}) {
                 
                 </div>
             ))}
+            
+            </div>
+            <div className='background-color'>
 
+            </div>
         </div>
 
     )

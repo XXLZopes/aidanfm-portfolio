@@ -3,11 +3,11 @@
   padding: 0;
 }
 html {
-  background: linear-gradient(160deg, #7e88ea, #484848);
+  /* background: linear-gradient(160deg, #7e88ea, #484848); */
 }
 .App {
   height: 100vh;
-  /* background: linear-gradient(160deg, #5E6EFF, #383838); */
+  min-height: fit-content;
 }
 
 .none {

@@ -1,5 +1,6 @@
 .landing {
     line-height: 40px;
+    min-height: fit-content;
 }
 
 .landing img {

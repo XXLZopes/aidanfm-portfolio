@@ -5,6 +5,15 @@
     top: 0;
 }
 
+.background-color {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(160deg, #5E6EFF, #383838);
+    z-index: -2;
+}
+
 .circle {
     position: absolute;
     border-radius: 365px;
