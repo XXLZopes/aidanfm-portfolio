@@ -20,7 +20,7 @@ export default function Content({navState, setNavState}) {
                     setNavState(false)
                 }}
                 />
-            <section className={`${navState ? 'contentClose' : 'contentOpen'}`}>
+            <section className={`background ${navState ? 'contentClose' : 'contentOpen'}`}>
             <div className='fa-bars-nav-con'>
                 <FontAwesomeIcon 
                 icon={faBars} 

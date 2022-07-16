@@ -50,7 +50,7 @@ export default function Background ({navState, setNavState}) {
         constructor(x, y, r, color, text) {
             this.x = x;
             this.y = y;
-            this.r = window.innerWidth < 700 ? r : dimensions.width / 200 * parseInt(r.split('')[0] + r.split('')[1]);
+            this.r = dimensions.width < 700 ? r : dimensions.width / 200 * parseInt(r);
             this.color = color
             this.text = text || ''
         }
@@ -59,7 +59,9 @@ export default function Background ({navState, setNavState}) {
             this.y = y;
         }
         setRadius(r) {
-            this.r = window.innerWidth < 700 ? r + 20: (dimensions.width / 200 * parseInt(r.split('')[0] + r.split('')[1] ) + 90);
+            this.r = dimensions.width < 700 ? parseInt(r) + 5 + 'vw': dimensions.width / 200 * parseInt(r);
+            dimensions.width < 700 ? console.log (r) : console.log (dimensions.width)
+
         }
         setText(text) {
             this.text = text || ''
@@ -76,20 +78,18 @@ export default function Background ({navState, setNavState}) {
     function setOpenNavCircleCoords() {
         circle0.move('15vw', '8vh')
         circle1.move('50vw', '20vh')
-        circle2.move('15vw', '40vh')
+        circle2.move('10vw', '35vh')
         circle3.move('45vw', '63vh')
 
         circle0.setRadius('19vw')
         circle1.setRadius('23vw')
-        circle2.setRadius('35vw')
+        circle2.setRadius('40vw')
         circle3.setRadius('19vw')
     }
 
     if (navState) {
         setOpenNavCircleCoords()
     }
-
-    // navState ? setOpenNavCircleCoords() : setCloseNavCircleCoords();
     
     const circlesNav = [circle0, circle1, circle2, circle3]
     const circlesOther = [circle4, circle5]
