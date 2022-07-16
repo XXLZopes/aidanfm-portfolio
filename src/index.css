@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
 }
+html {
+  background: linear-gradient(160deg, #5E6EFF, #383838);
+}
 .App {
   height: 100vh;
-  background: linear-gradient(160deg, #5E6EFF, #383838);
+  /* background: linear-gradient(160deg, #5E6EFF, #383838); */
 }
 
 .none {

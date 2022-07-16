@@ -1,6 +1,6 @@
 .circle-con {
     width: 100vw;
-    height: 0vw;
+    height: 100vh;
     position: fixed;
     top: 0;
 }
@@ -59,7 +59,7 @@
     }
 
     .circle-con {
-        margin-left: -10vw;
+        padding-right: 0;
     }
     .transition:hover > h2{
         font-size: 39px;

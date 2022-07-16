@@ -67,3 +67,28 @@
     z-index: 0;
     transition: .3s;
 }
+
+h1, h2, h3 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+h2 {
+    color: #1E1E1E;
+}
+
+h3 {
+    color: #383838
+}
+
+.medias {
+    font-size: 30px;
+    position: absolute;
+    bottom: 10%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.medias #m1, #m2, #m3, #m4 {
+    margin: 10px;
+}

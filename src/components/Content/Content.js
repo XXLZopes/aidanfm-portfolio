@@ -5,6 +5,10 @@ import './content.css'
 import Landing from './Landing/Landing';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars, faX} from '@fortawesome/pro-light-svg-icons' 
+import {faEnvelopeCircle} from '@fortawesome/pro-solid-svg-icons'
+import { faInstagramSquare, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+
 
 export default function Content({navState, setNavState}) {
     return (
@@ -28,6 +32,26 @@ export default function Content({navState, setNavState}) {
                 />
             </div>
                 <Landing></Landing>
+
+                <div className='medias'>
+                <FontAwesomeIcon 
+                icon={faGithub}
+                id='m1' 
+                />
+                <FontAwesomeIcon 
+                icon={faLinkedin} 
+                id='m3' 
+                />
+                <FontAwesomeIcon 
+                icon={faInstagramSquare} 
+                id='m4' 
+                />
+                <FontAwesomeIcon 
+                icon={faEnvelopeCircle} 
+                id='m2' 
+                />
+
+                </div>
             </section>
         </div>
     )

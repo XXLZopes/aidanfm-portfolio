@@ -45,25 +45,6 @@ export default function Background ({navState, setNavState}) {
         }
     })
 
-    // class Circle {
-    //     constructor(x, y, r, color, text) {
-    //         this.x = dimensions.width / x || 0;
-    //         this.y = dimensions.height / y || 0;
-    //         this.r = dimensions.width <= 700 ? dimensions.width / r : 700 / r;
-    //         this.color = color
-    //         this.text = text || ''
-    //     }
-    //     move(x, y) {
-    //         this.x = dimensions.width / x || 0;
-    //         this.y = dimensions.height / y || 0;
-    //     }
-    //     setRadius(r) {
-    //         this.r = dimensions.width <= 700 ? dimensions.width / r : 700 / r;
-    //     }
-    //     setText(text) {
-    //         this.text = text || ''
-    //     }
-    // }
     
     class Circle {
         constructor(x, y, r, color, text) {
@@ -78,35 +59,25 @@ export default function Background ({navState, setNavState}) {
             this.y = y;
         }
         setRadius(r) {
-            this.r = r;
+            this.r = window.innerWidth < 700 ? r + 20: (dimensions.width / 200 * parseInt(r.split('')[0] + r.split('')[1] ) + 90);
         }
         setText(text) {
             this.text = text || ''
         }
     }
 
-    let left_ = dimensions.width
-    let bottom_ = 1.11
-
-    // let circle0 = new Circle(1.215, 25, 5.7, '#FDFFB2', 'Home')
-    // let circle1 = new Circle(1.7, 3.5, 4.6, '#96DFFF', 'About Me')
-    // let circle2 = new Circle(left_, 2.7, 2.75, '#FF8B8B', 'Past Projects')
-    // let circle3 = new Circle(3, 1.5, 5.7, '#7451FF', 'Contact')
-    // let circle4 = new Circle(1.25, 1.25, 11, '#B6FF9C')
-    // let circle5 = new Circle(left_, bottom_, 6, '#B3B3B3')
-
     let circle0 = new Circle('81vw', '4vh', '19vw', '#FDFFB2', 'Home')
-    let circle1 = new Circle('59vw', '30vh', '23vw', '#96DFFF', 'About Me')
-    let circle2 = new Circle('0vw', '35vh', '35vw', '#FF8B8B', 'Past Projects')
-    let circle3 = new Circle('37vw', '65vh', '19vw', '#7451FF', 'Contact')
-    let circle4 = new Circle('76vw', '85vh', '9vw', '#B6FF9C')
-    let circle5 = new Circle('1vw', '90vh', '17vw', '#B3B3B3')
+    let circle1 = new Circle('59vw', '25vh', '23vw', '#96DFFF', 'About Me')
+    let circle2 = new Circle('0vw', '30vh', '35vw', '#FF8B8B', 'Past Projects')
+    let circle3 = new Circle('37vw', '60vh', '19vw', '#7451FF', 'Contact')
+    let circle4 = new Circle('76vw', '80vh', '9vw', '#B6FF9C')
+    let circle5 = new Circle('1vw', '85vh', '17vw', '#B3B3B3')
 
     function setOpenNavCircleCoords() {
         circle0.move('15vw', '8vh')
-        circle1.move('50vw', '25vh')
+        circle1.move('50vw', '20vh')
         circle2.move('15vw', '40vh')
-        circle3.move('45vw', '70vh')
+        circle3.move('45vw', '63vh')
 
         circle0.setRadius('19vw')
         circle1.setRadius('23vw')
